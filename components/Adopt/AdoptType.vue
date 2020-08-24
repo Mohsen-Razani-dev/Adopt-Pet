@@ -1,0 +1,163 @@
+<template>
+  <div class="adoptType">
+    <el-container class="adoptTypeContainer">
+      <el-row align="center" class="adoptTypeRow">
+        <h1 class="Mainheadtxt">Adopt Types</h1>
+        <el-divider></el-divider>
+        <el-col :md="8">
+          <div class="adoptTypeCenterDescrib">
+            <h1 class="adoptTypeCenterDescribHeader">Choose your Adopt type</h1>
+            <p class="adoptTypeCenterDescribparag">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+        </el-col>
+        <el-col :md="8">
+          <div class="Type">
+            <nuxt-link no-prefetch to="/Adopt/inhome" class="LinkType">
+              <div id="imgType1">
+                <p class="Typetxt">Adopt In Your Home</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </el-col>
+        <el-col :md="8">
+          <div class="Type">
+            <nuxt-link to="/Adopt/inStreet" class="LinkType">
+              <div id="imgType2">
+                <p class="Typetxt">Street Adopting</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </el-col>
+      </el-row>
+    </el-container>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'AdoptType',
+}
+</script>
+
+<style scoped lang="scss">
+.adoptType {
+  padding: 0 8%;
+  .adoptTypeContainer {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .adoptTypeRow {
+      padding-top: 40px;
+      justify-content: space-around;
+      align-items: center;
+      .Mainheadtxt {
+        margin: 0 auto;
+        text-align: left;
+        /* stylelint-disable */
+        font-family: 'Gilroy-Heavy' !important;
+        /* stylelint-enable */
+        font-size: 35px;
+        color: rgba(77, 44, 88, 0.71);
+        letter-spacing: 2px;
+      }
+      .adoptTypeCenterDescrib {
+        padding: 0 20px 0 0;
+        max-height: 450px;
+        min-height: 450px;
+        .adoptTypeCenterDescribHeader {
+          margin-bottom: 30px;
+          /* stylelint-disable */
+          font-family: 'Gilroy-Medium' !important;
+          /* stylelint-enable */
+          font-size: 29px;
+          color: rgba(77, 44, 88, 0.61);
+          text-align: left;
+        }
+        .adoptTypeCenterDescribparag {
+          text-align: justify;
+          /* stylelint-disable */
+          font-family: 'Gilroy-Regular' !important;
+          /* stylelint-enable */
+          font-size: 17px;
+          color: rgba(35, 21, 40, 0.51);
+          padding: 5px 5% 5px 0;
+        }
+      }
+      .Type {
+        text-align: center;
+        padding: 0 15px;
+        .LinkType {
+          text-decoration: none;
+          #imgType2 {
+            width: 100%;
+            background-image: url('https://images.unsplash.com/photo-1572514258831-e30812b73a46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80');
+            background-size: cover;
+            background-position: center;
+            max-height: 450px;
+            min-height: 450px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.51);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .Typetxt {
+              font-size: 30px;
+              color: rgba(255, 255, 255, 1);
+              background-color: rgba(39, 20, 57, 0.31);
+              padding: 17px 0;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              border-radius: 7px;
+              display: flex;
+              align-items: flex-end;
+              justify-content: center;
+            }
+          }
+          #imgType1 {
+            width: 100%;
+            background-image: url('https://images.unsplash.com/photo-1491764317679-2d993424ff66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=80');
+            background-size: cover;
+            background-position: center;
+            max-height: 450px;
+            min-height: 450px;
+            border-radius: 7px;
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.51);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .Typetxt {
+              font-size: 30px;
+              color: rgba(255, 255, 255, 1);
+              background-color: rgba(39, 20, 57, 0.31);
+              padding: 17px 0;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              border-radius: 7px;
+              display: flex;
+              align-items: flex-end;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</style>

@@ -1,0 +1,190 @@
+<template>
+  <div>
+    <div class="blog">
+      <div class="blogCont">
+        <el-main class="blogMAin">
+          <el-row>
+            <el-col :md="24">
+              <div class="blogHeadBox">
+                <p>
+                  Stories About Life,<br />
+                  Tech & Insurance
+                </p>
+                <span>
+                  Subscribe to our exclusive mailing list and get the freshest
+                  stories <br />
+                  from the Lemonade team
+                </span>
+                <div class="mailbox">
+                  <input placeholder="EMAIL ADDRESS" type="text" />
+                  <button>SUBSCRIBE</button>
+                </div>
+              </div>
+            </el-col>
+          </el-row>
+        </el-main>
+      </div>
+    </div>
+
+    <div class="blogPosts">
+      <el-main>
+        <el-row style="overflow:auto">
+          <el-col :md="8" class="postCol" v-for="item in posts">
+            <div class="post">
+              <img :src="item.img" alt="..." />
+              <h1>
+                {{ item.title }}
+              </h1>
+              <span class="writer">Team Lemonade</span>
+              <p>
+                {{ item.description }}
+              </p>
+              <el-tag class="tag" type="info">{{ item.tag }}</el-tag>
+            </div>
+          </el-col>
+        </el-row>
+      </el-main>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Blog',
+  data: () => ({
+    posts: [
+      {
+        id: 1,
+        img: require('../../assets/blog/posts/post.jpg'),
+        title: '7 Things To Consider When Picking the Right Dog for Your Lifestyle',
+        description: 'Adopting a furry friend? You’ll want to think about your apartment, the weather, finances, and more. But with a little research you’ll find your new BFF.',
+        tag: '#Pet',
+      },
+      {
+        id: 2,
+        img: require('../../assets/blog/posts/post.jpg'),
+        title: '7 Things To Consider When Picking the Right Dog for Your Lifestyle',
+        description: 'Adopting a furry friend? You’ll want to think about your apartment, the weather, finances, and more. But with a little research you’ll find your new BFF.',
+        tag: '#Pet',
+      },
+      {
+        id: 3,
+        img: require('../../assets/blog/posts/post.jpg'),
+        title: '7 Things To Consider When Picking the Right Dog for Your Lifestyle',
+        description: 'Adopting a furry friend? You’ll want to think about your apartment, the weather, finances, and more. But with a little research you’ll find your new BFF.',
+        tag: '#Pet',
+      },
+      {
+        id: 4,
+        img: require('../../assets/blog/posts/post.jpg'),
+        title: '7 Things To Consider When Picking the Right Dog for Your Lifestyle',
+        description: 'Adopting a furry friend? You’ll want to think about your apartment, the weather, finances, and more. But with a little research you’ll find your new BFF.',
+        tag: '#Pet',
+      },
+    ],
+  }),
+}
+</script>
+
+<style scoped lang="scss">
+.blog {
+  background-image: url('../../assets/blog/santiago-sanabria-UG0lgb2WZ5o-unsplash.png');
+  background-size: cover;
+  background-position: bottom;
+  min-height: 70vh;
+  height: 100%;
+  position: relative;
+  .blogCont {
+    background-color: rgba(0, 0, 0, 0.52);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .blogMAin {
+      height: 100%;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      display: flex;
+      justify-content: center;
+      .blogHeadBox {
+        color: white;
+        text-align: center;
+        position: relative;
+        p {
+          font-family: Merriweather-Regular;
+          font-size: 50px;
+          margin-top: 33px;
+          margin-bottom: 43px;
+        }
+        span {
+          font-size: 14px;
+        }
+        .mailbox {
+          display: flex;
+          width: 100%;
+          margin-top: 27px;
+          input {
+            width: 100%;
+            padding: 10px 10px;
+            font-size: 16px;
+            outline: none !important;
+            border: 1px solid #b65fbe;
+            border-radius: 7px;
+            background-color: rgba(0, 0, 0, 0.25);
+          }
+          button {
+            font-size: 15px;
+            padding: 0 10px;
+            background-color: #b959c1;
+            border: none;
+            border-radius: 7px;
+            outline: none;
+            margin-left: 15px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+.blogPosts {
+  .postCol {
+    padding: 30px;
+    max-height: 650px;
+    height: 650px;
+    min-height: 650px;
+    overflow: scroll;
+    .post {
+      background-color: #f6f6f6;
+      padding: 20px;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 9px;
+      }
+      h1 {
+        margin-top: 25px;
+        color: #4a4a4a;
+        font-size: 23px;
+        margin-bottom: 20px;
+      }
+      .writer {
+        color: #4a4a4a;
+      }
+      p {
+        margin-top: 20px;
+        color: #4a4a4a;
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+      .tag {
+        border-radius: 20px;
+        background-color: #ececec;
+      }
+    }
+  }
+}
+</style>
