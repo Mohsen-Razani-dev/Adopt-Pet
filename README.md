@@ -1,4 +1,4 @@
-# adoptpet
+# adoptpet next js
 
 ## Build Setup
 
