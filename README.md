@@ -1,4 +1,4 @@
-# adoptpet next js
+# adoptpet nuxt js
 
 ## Build Setup
 
