@@ -39,7 +39,7 @@ export default {
           id: 1,
           name: 'Food',
           link: 'food',
-          img: require('../../assets/Adopt/inStreet/feed.png'),
+          img: require('../../assets/Images/Adopt/inStreet/feed.png'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },
@@ -47,7 +47,7 @@ export default {
           id: 2,
           name: 'House',
           link: 'house',
-          img: require('../../assets/Adopt/inStreet/house1.png'),
+          img: require('../../assets/Images/Adopt/inStreet/house1.png'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },
@@ -55,7 +55,7 @@ export default {
           id: 3,
           name: 'Treatment',
           link: 'treatment',
-          img: require('../../assets/Adopt/inStreet/hospital.png'),
+          img: require('../../assets/Images/Adopt/inStreet/hospital.png'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },
@@ -63,7 +63,7 @@ export default {
           id: 4,
           name: 'Adore',
           link: 'adore',
-          img: require('../../assets/Adopt/inStreet/Cuddling.jpg'),
+          img: require('../../assets/Images/Adopt/inStreet/Cuddling.jpg'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },

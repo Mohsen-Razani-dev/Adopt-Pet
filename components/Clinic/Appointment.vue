@@ -8,7 +8,7 @@
       class="submitform"
     >
       <el-row class="submitformRow">
-        <el-col :md="12" class="submitformCol">
+        <el-col :md="12" :sm="12" class="submitformCol">
           <el-input
             class="submitformInput"
             v-model="ruleForm.name"
@@ -16,7 +16,7 @@
             style="width: 100%;"
           ></el-input>
         </el-col>
-        <el-col :md="12" class="submitformCol">
+        <el-col :md="12" :sm="12" class="submitformCol">
           <el-select
             v-model="ruleForm.gender"
             placeholder="Select"
@@ -32,7 +32,7 @@
           </el-select>
         </el-col>
 
-        <el-col :md="12" class="submitformCol">
+        <el-col :md="12" :sm="12" class="submitformCol">
           <el-input
             v-model="ruleForm.email"
             placeholder="Email"
@@ -40,14 +40,14 @@
           ></el-input>
         </el-col>
 
-        <el-col :md="12" class="submitformCol">
+        <el-col :md="12" :sm="12" class="submitformCol">
           <el-input
             v-model="ruleForm.phone"
             placeholder="Phone"
             style="width: 100%;"
           ></el-input>
         </el-col>
-        <el-col :md="12" class="submitformCol">
+        <el-col :md="12" :sm="12" class="submitformCol">
           <el-date-picker
             type="date"
             placeholder="Pick a date"
@@ -55,7 +55,7 @@
             style="width: 100%;"
           ></el-date-picker>
         </el-col>
-        <el-col :md="12" class="submitformCol">
+        <el-col :md="12" :sm="12" class="submitformCol">
           <el-time-picker
             placeholder="Pick a time"
             v-model="ruleForm.time"
@@ -63,7 +63,7 @@
           ></el-time-picker>
         </el-col>
 
-        <el-col :md="12" class="submitformCol">
+        <el-col :md="12" :sm="12" class="submitformCol">
           <el-select
             v-model="ruleForm.problem"
             placeholder="Select"
@@ -79,7 +79,7 @@
           </el-select>
         </el-col>
 
-        <el-col :md="12" class="submitformCol">
+        <el-col :md="12" :sm="12" class="submitformCol">
           <el-input
             v-model="ruleForm.weight"
             placeholder="Weight"

@@ -1,0 +1,200 @@
+@import 'responsiveMixin';
+.About {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 100px 4% 0 4%;
+  .AboutMain {
+    height: 100%;
+    width: 100%;
+    background-color: #f5f7fb;
+    padding: 6%;
+    .AboutRow {
+      .AboutCol {
+        padding: 30px;
+        .section {
+          text-align: center;
+          background-color: white;
+          border-radius: 7px;
+          padding: 30px;
+          height: 440px;
+          display: grid;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          align-content: center;
+          align-self: center;
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.36);
+          img {
+            height: 90px;
+            width: 90px;
+            border-radius: 100%;
+            object-fit: cover;
+          }
+          h1 {
+            font-family: Gilroy-Medium;
+            font-size: 23px;
+            margin: 20px 0 3px 0;
+            color: #2d4050;
+          }
+          h2 {
+            font-family: Gilroy-Medium;
+            font-size: 19px;
+            margin: 0 0 15px 0;
+            color: #babfc6;
+          }
+          i {
+            cursor: pointer;
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #37a0f7;
+          }
+          p {
+            font-size: 15px;
+            color: rgba(112, 116, 122, 0.99);
+          }
+        }
+      }
+    }
+  }
+  .investor {
+    padding: 100px 0;
+    text-align: center;
+    .investorRow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      .investorCol {
+        padding: 10px;
+        .investorBox {
+          padding: 40px;
+          min-height: 200px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.36);
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .office {
+    background-color: #f5f7fb;
+    .officeMain {
+      .officeRow {
+        display: flex;
+        justify-content: center;
+        .officeCol {
+          padding: 30px;
+          .officeSection {
+            background-color: white;
+            padding: 0 0 30px 0;
+            display: grid;
+            text-align: center;
+            align-content: center;
+            justify-items: center;
+            border-radius: 7px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.26);
+            .city {
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+              border-top-left-radius: 7px;
+              border-top-right-radius: 7px;
+              margin-bottom: 40px;
+            }
+            .cardDescrib {
+              min-height: 250px;
+              display: grid;
+              text-align: center;
+              align-content: center;
+              justify-items: center;
+              h1 {
+                font-size: 26px;
+                margin-bottom: 30px;
+                color: #394a58;
+                font-family: Gilroy-Bold;
+              }
+              span {
+                font-family: Gilroy-Medium;
+                font-size: 20px;
+                padding: 0 55px 40px 55px;
+                color: #b2b8c0;
+              }
+              .flag {
+                text-align: center;
+                height: 20px;
+                width: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    background-color: white;
+    padding: 80px 40px 30px 40px;
+    .footerAboutLogosCol {
+      display: block;
+      .footerAboutLogosBox {
+        img {
+          height: 100px;
+          width: 100px;
+        }
+      }
+    }
+    .footerAboutLinksCol {
+      .links {
+        display: grid;
+        padding: 0 20px;
+        .footerAboutHeader {
+          color: #40a6f0;
+          font-size: 17px;
+          margin-bottom: 30px;
+        }
+        .footerAboutHeaderlink {
+          color: #a5adb4;
+          font-size: 14px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+@include tablet {
+  .About {
+    padding: 150px 4% 0 4%;
+  }
+  .AboutRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    h1 {
+      width: 100% !important;
+    }
+  }
+  .AboutCol {
+    .section {
+      height: auto !important;
+      min-height: 470px !important;
+    }
+  }
+  .footer{
+    padding: 80px 40px !important;
+  }
+  .footerAboutLogosCol{
+    display: none !important;
+  }
+}
+@include mobile{
+  .footerAboutLogosCol{
+    display: none !important;
+  }
+}

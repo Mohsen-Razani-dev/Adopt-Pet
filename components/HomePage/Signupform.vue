@@ -237,6 +237,9 @@ export default {
   color: #82ce5c;
   outline: none;
 }
+.el-checkbox__label{
+  font-size: 11px;
+}
 .el-input__inner{
   border: 1px solid #82ce5c;
 }

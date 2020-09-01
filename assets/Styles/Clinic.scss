@@ -1,0 +1,499 @@
+@import "responsiveMixin";
+.clinic {
+  .headerClinic {
+    background-image: url('../../assets/Images/Clinic/hederbg.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .containerClinic {
+      padding: 0 8%;
+      .containerClinicHeaderDescr {
+        .containerClinicHeaderDescrbox {
+          span {
+            font-size: 28px;
+            color: #6d8ba7;
+          }
+          h1 {
+            font-size: 60px;
+            color: #304f6e;
+          }
+          button {
+            font-family: Gilroy-Medium;
+            padding: 15px 25px;
+            background-color: #46b6f6;
+            font-size: 15px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+  .sectionClinic {
+    margin-top: 40px;
+    .sectionClinicRow {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      overflow: hidden;
+      .sectionClinicCol {
+        text-align: center;
+        img {
+          width: 100%;
+          margin-bottom: -20px;
+          margin-top: 70px;
+        }
+        .sectionClinicP {
+          font-size: 18px;
+          font-family: Gilroy-Regular;
+          margin-bottom: 8px;
+          color: #6d8ba7;
+        }
+        .sectionClinicH {
+          color: #304f6e;
+          font-size: 36px;
+          font-family: Gilroy-Medium;
+          margin-bottom: 16px;
+        }
+        .sectionClinicSpan {
+          color: #355173;
+          font-size: 15px;
+          font-family: Gilroy-Regular;
+          margin-bottom: 10px;
+        }
+        .sectionClinicA {
+          text-decoration: none;
+          color: #46b6f6;
+        }
+      }
+    }
+  }
+  .clinicSpecialties {
+    padding: 0 4%;
+    margin-bottom: 40px;
+    .clinicSpecialtiesheader {
+      text-align: center;
+      .clinicSpecialtiesheaderP {
+        color: #6d8ba7;
+      }
+      .clinicSpecialtiesheaderH {
+        color: #304f6e;
+      }
+    }
+    .clinicSpecialtiesRow {
+      display: flex;
+      justify-content: center;
+      .clinicSpecialtiesCol {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        .clinicSpecialtiesboxCol {
+          border-collapse: collapse;
+          padding: 7px;
+          .clinicSpecialtiesbox {
+            border-radius: 4px;
+            box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.53);
+            background-color: white;
+            transition: 200ms all ease-out;
+            position: relative;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .clinicSpecialtiesImg {
+              width: 100%;
+              padding: 50px 50px 0 50px;
+              filter: opacity(0.7);
+            }
+            .clinicSpecialtiesDesc {
+              text-align: center;
+              position: absolute;
+              width: 100%;
+              left: 50%;
+              top: 50%;
+              margin: 0 auto;
+              transform: translate(-50%, -50%);
+              background-color: rgba(70, 182, 246, 0.85);
+              color: white;
+              font-family: Gilroy-Bold;
+              font-size: 25px;
+              height: 100%;
+              display: none;
+              align-items: center;
+              justify-content: center;
+            }
+            .clinicSpecialtiesName {
+              padding: 20px 0 50px 0;
+              color: #355173;
+            }
+            &:hover {
+              transform: scale(1.05);
+              transition: 200ms all ease-out;
+              box-shadow: 0 0 30px 10px rgba(70, 182, 246, 0.33);
+              border: none;
+              .clinicSpecialtiesDesc {
+                display: flex;
+                .clinicSpecialtiesDescUl {
+                  width: 100%;
+                  text-align: left;
+                  padding-left: 30px;
+                  height: 100%;
+                  padding-top: 40px;
+                  .clinicSpecialtiesDescHeader {
+                    font-size: 17px;
+                    list-style: none;
+                    text-align: left;
+                    width: 100%;
+                    margin-bottom: 10px;
+                  }
+                  .clinicSpecialtiesDescLi {
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .appointment {
+    background-image: url('../../assets/Images/Clinic/hush-naidoo-yo01Z-9HQAw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    height: 100%;
+    position: relative;
+    .appointmentMain {
+      overflow: hidden;
+      position: absolute;
+      height: 100%;
+      background-color: rgba(73, 186, 244, 0.89);
+      width: 100%;
+      background-size: cover;
+      .appointmentRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        .appointmentDescrCol {
+          .appointmentDescr {
+            .appointmentH {
+              color: #fff;
+              font-family: Gilroy-Regular;
+              margin-bottom: 40px;
+              font-size: 33px;
+            }
+            .appointmentDescrP {
+              color: #fff;
+              font-family: Gilroy-Regular;
+            }
+          }
+        }
+        .appointmentSubmitCol {
+          .submitForm {
+            padding: 80px;
+          }
+        }
+      }
+    }
+  }
+  .doctors {
+    /*background-color: white;*/
+    min-height: 90vh;
+    .doctorsMain {
+      height: 100%;
+      .doctorsHeaderDescr {
+        text-align: center;
+        width: 100%;
+        padding: 50px 0;
+        span {
+          font-size: 20px;
+          color: #6d8ba7;
+        }
+        h1 {
+          font-size: 40px;
+          color: #304f6e;
+        }
+      }
+      .doctorsRow {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .doctorsCol {
+          .doctorCarousel {
+            min-height: 80vh;
+            height: 100%;
+            .doctorCarouselItem {
+              height: auto !important;
+              padding: 20px;
+              .doctorCarouselCard {
+                box-shadow: 0 0 20px 0 rgba(50, 49, 49, 0.75);
+                background-color: white;
+                text-align: center;
+                padding: 0;
+                height: auto;
+                width: 350px;
+                height: 100%;
+                margin: 0 auto;
+                .doctorCarouselDescribtion {
+                  background-color: #edf4fa;
+                  z-index: 10;
+                  .doctorCarouselName {
+                    padding-top: 30px;
+                    padding-bottom: 20px;
+                  }
+                  .doctorCarouselAbility {
+                    padding-bottom: 30px;
+                  }
+                  .drmedia {
+                    padding-bottom: 30px;
+                    display: flex;
+                    justify-content: center;
+                    i {
+                      color: white;
+                      padding: 8px;
+                      margin-right: 7px;
+                      background-color: rgb(69, 183, 241);
+                    }
+                  }
+                  .ViewProfile {
+                    width: 100%;
+                    background-color: rgba(69, 183, 241, 0.94);
+                    color: white;
+                    height: 60px;
+                    font-size: 24px;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                  }
+                }
+                .doctorCarouselImg {
+                  margin-bottom: -3px;
+                  padding: 30px 30px 0 30px;
+                  max-height: 300px;
+                  width: 100%;
+                  object-fit: contain;
+                  z-index: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .ContactDoctor {
+    padding: 0 8%;
+    .ContactDoctorsMain {
+      .ContactDoctorRow {
+        .ContactDoctorCol {
+          padding: 30px;
+          .ContactDoctorBox {
+            padding: 30px;
+            background-color: #ececec;
+            height: 240px;
+            width: 240px;
+            display: grid;
+            align-items: center;
+            align-content: space-evenly;
+            cursor: pointer;
+            i {
+              font-size: 40px;
+              color: rgb(84, 192, 246);
+            }
+            h1 {
+              font-size: 22px;
+              font-family: Gilroy-Medium;
+              color: #304f6e;
+            }
+            span {
+              font-family: Gilroy-Medium;
+              font-size: 14px;
+              color: #6d8ba7;
+            }
+            &:hover {
+              background-color: rgb(84, 192, 246);
+              i,
+              h1,
+              span {
+                color: rgba(255, 255, 255, 0.92);
+              }
+            }
+          }
+        }
+      }
+      .ContactDoctorsHeaderDescr {
+        text-align: center;
+        width: 100%;
+        padding: 50px 0;
+        span {
+          font-size: 20px;
+          color: #6d8ba7;
+        }
+        h1 {
+          font-size: 40px;
+          color: #304f6e;
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 70px 8% 40px 8%;
+    background-color: #304f6e;
+    .Copyright {
+      color: rgba(255, 255, 255, 0.91);
+      font-size: 12px;
+    }
+    .footerCol {
+      display: grid;
+      align-items: flex-start;
+      padding: 0 20px;
+      p {
+        margin-top: 15px;
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.81);
+      }
+      span {
+        font-size: 19px;
+        color: rgba(255, 255, 255, 0.89);
+        margin-bottom: 15px;
+      }
+      a {
+        margin-top: 12px;
+        text-decoration: none;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.75);
+      }
+    }
+  }
+  .FindDoctor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    #Application {
+      background-color: #46b6f6;
+    }
+    #Find {
+      background-color: #aedc46;
+    }
+    #Charge {
+      background-color: #46b6f6;
+    }
+    button {
+      cursor: pointer;
+      margin: 0 40px;
+      color: white;
+      height: 90px;
+      width: 290px;
+      font-size: 27px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      border: none;
+      i {
+        font-size: 33px;
+      }
+    }
+  }
+}
+.el-carousel__container {
+  position: relative;
+  height: auto;
+}
+
+@include tablet {
+  .headerClinic{
+    min-height: 60vh !important;
+    background-position: right !important;
+    .containerClinic{
+      backdrop-filter: blur(8px) !important;
+      min-height: 60vh !important;
+      height: 100% !important;
+      z-index: 1 !important;
+      display: flex !important;
+      align-items: center !important;
+    }
+  }
+  .FindDoctor{
+    position: relative !important;
+    z-index: 20;
+    margin-top: -30px !important;
+    button{
+      margin: 0 16px !important;
+      height: 60px !important;
+      width: 260px !important;
+      font-size: 20px !important;
+      padding: 0 12px !important;
+    }
+  }
+  .sectionClinic{
+    padding: 0 8%;
+  }
+  .clinicSpecialtiesImg{
+    padding: 40px 40px 0 40px !important;
+  }
+  .clinicSpecialtiesName{
+    padding: 20px 0 30px 0 !important;
+  }
+  .clinicSpecialtiesheader{
+    margin-top: 20px;
+  }
+  .appointmentRow{
+    flex-wrap: wrap !important;
+    height: 100% !important;
+    display: grid !important;
+    align-content: center !important;
+    justify-items: center !important;
+  }
+  .appointmentDescr{
+    padding: 0 40px 20px 40px ;
+    .appointmentH{
+      margin-bottom: 7px !important;
+    }
+  }
+  .submitForm{
+    padding: 10px 40px 40px 40px !important;
+  }
+  .doctorCarouselCard{
+    width: auto !important;
+  }
+  .doctorCarousel{
+    min-height: 66vh !important;
+  }
+  .ContactDoctorsHeaderDescr{
+    padding: 0 0 50px 0 !important;
+  }
+  #ClinicfooterColLogo{
+    display: grid !important;
+    width: 100% !important;
+    margin-bottom: 50px;
+    justify-content: center !important;
+    align-content: center;
+    justify-items: center;
+    p{
+      margin-top: 16px !important;
+      font-size: 20px !important;
+      margin-bottom: 30px !important;
+    }
+  }
+  .footerCol{
+    text-align: left !important;
+    span{
+      font-size: 16px !important;
+    }
+    a{
+      font-size: 12px !important;
+    }
+  }
+}

@@ -40,7 +40,7 @@ export default {
           id: 1,
           name: 'DOG',
           link: 'Dog',
-          img: require('../../assets/Adopt/inHome/dog.jpg'),
+          img: require('../../assets/Images/Adopt/inHome/dog.jpg'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },
@@ -48,7 +48,7 @@ export default {
           id: 2,
           name: 'CAT',
           link: 'Cat',
-          img: require('../../assets/Adopt/inHome/cat.jpg'),
+          img: require('../../assets/Images/Adopt/inHome/cat.jpg'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },
@@ -56,7 +56,7 @@ export default {
           id: 3,
           name: 'SNAKE',
           link: 'Snake',
-          img: require('../../assets/Adopt/inHome/snake.jpg'),
+          img: require('../../assets/Images/Adopt/inHome/snake.jpg'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },
@@ -64,7 +64,7 @@ export default {
           id: 4,
           name: 'EAGLE',
           link: 'Eagle',
-          img: require('../../assets/Adopt/inHome/eagle.jpg'),
+          img: require('../../assets/Images/Adopt/inHome/eagle.jpg'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },
@@ -72,7 +72,7 @@ export default {
           id: 5,
           name: 'OWL',
           link: 'Owl',
-          img: require('../../assets/Adopt/inHome/owl.jpg'),
+          img: require('../../assets/Images/Adopt/inHome/owl.jpg'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },
@@ -80,7 +80,7 @@ export default {
           id: 6,
           name: 'KOALA',
           link: 'Koala',
-          img: require('../../assets/Adopt/inHome/koala.jpg'),
+          img: require('../../assets/Images/Adopt/inHome/koala.jpg'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },
@@ -88,7 +88,7 @@ export default {
           id: 7,
           name: 'PARROT',
           link: 'Parrot',
-          img: require('../../assets/Adopt/inHome/parrots.jpg'),
+          img: require('../../assets/Images/Adopt/inHome/parrots.jpg'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },
@@ -96,7 +96,7 @@ export default {
           id: 8,
           name: 'HAMSTER',
           link: 'Hamster',
-          img: require('../../assets/Adopt/inHome/hamster.jpg'),
+          img: require('../../assets/Images/Adopt/inHome/hamster.jpg'),
           descr:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus leo et enim vulputate, ut mattis tellus venenatis.',
         },

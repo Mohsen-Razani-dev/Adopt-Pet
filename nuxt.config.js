@@ -34,7 +34,11 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['@/plugins/element-ui', { src: '@plugins/youtube.js', ssr: false }],
+  plugins: [
+    '@/plugins/element-ui',
+    { src: '@plugins/youtube.js', ssr: false },
+    '@plugins/fontawesome.js',
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -43,7 +47,25 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: [
+    [
+      'nuxt-fontawesome',
+      {
+        component: 'fa', //customize component name
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['faLightbulb'],
+          },
+          { set: '@fortawesome/free-brands-svg-icons', icons: ['faGithub'] },
+          {
+            set: '@fortawesome/free-regular-svg-icons',
+            icons: ['faLightbulb'],
+          },
+        ],
+      },
+    ],
+  ],
   /*
    ** Nuxt.js modules
    */
